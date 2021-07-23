@@ -7,6 +7,7 @@ I spent quite some time on this... here we go.
 - Mine has Ubuntu 20.04.2 LTS
 - You cannot use certificate-based authentication when going through the Web Interface of the USG.
 - So we need to set up a shared-key authentication scheme.
+- For whatever reason, keys and related stuff must be in ab subdirectory of `/etc/openvpn`. Else, OpenVPN will complain about not being able to find the files (even though they exist and are accessible).
 - Create a static key as per OpenVPN doc: https://openvpn.net/community-resources/static-key-mini-howto/
 - `cat` the key, copy it to your favorite editor and delete all newlines as well as the leading and trailing lines indiciating the content.
 - Paste the modified key to the appropriate line in the Web Interface.
