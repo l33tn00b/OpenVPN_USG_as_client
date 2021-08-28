@@ -52,3 +52,6 @@ Jul 23 14:38:12 USG openvpn[1450]: UDPv4 link remote: [AF_INET]<remote IP>:<remo
 ```
 
 - Ahh.. yes: BF-CBC is an old cipher (Blowfish, deemed too short)
+
+# Have multiple servers/instances running?
+`systemctl status openvpn@<instance name>`
