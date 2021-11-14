@@ -1,6 +1,9 @@
 # OpenVPN_USG_as_client
 Setting up Ubiquiti's USG as OpenVPN client.
 I spent quite some time on this... here we go.
+But wait... 
+This is by no means bullet proof. The USG just seems to be unable to work with non-static IP addresses. The tunnel will go stale without the USG taking note. 
+So: If you have another machine capable of running an openvpn client and maybe doing some routing behind the USG: Use it instead of the USG.
 
 # Prerequisites
 - You need a machine to be used as OpenVPN server.
