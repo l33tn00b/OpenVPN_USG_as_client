@@ -58,3 +58,7 @@ Jul 23 14:38:12 USG openvpn[1450]: UDPv4 link remote: [AF_INET]<remote IP>:<remo
 
 # Have multiple servers/instances running?
 `systemctl status openvpn@<instance name>`
+
+# Clients may talk to each other?
+Comment out `client-to-client`.  
+Yes, comment out.
