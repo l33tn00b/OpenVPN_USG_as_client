@@ -5,6 +5,8 @@ But wait...
 This is by no means bullet proof. The USG just seems to be unable to work with non-static IP addresses. The tunnel will go stale without the USG taking note. 
 So: If you have another machine capable of running an openvpn client and maybe doing some routing behind the USG: Use it instead of the USG.
 
+I ended up dropping two EdgeRouters (ER-X) into the networks behind the USGs doing their thing. Thus tying together the two networks at at centrally accessible server.
+
 # Prerequisites
 - You need a machine to be used as OpenVPN server.
 - Mine has Ubuntu 20.04.2 LTS
